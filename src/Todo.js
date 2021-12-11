@@ -76,7 +76,6 @@ function Todo(){
                         <div className="list-container">
                             <div key={id}>
                                 <h2 contentEditable="true" onKeyUp={(e)=>{todoArray[id] = e.target.innerHTML}} className="list-item">{elem}</h2>
-                                <p>{id}</p>
                                 <button className="list-deletebutton" onClick={()=>tryDelete(id)}>X</button>
                             </div>
                         </div>
